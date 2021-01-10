@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+.npmrc
+
+node_modules
+packages/**/dist
+packages/**/gmap-vue.js

@@ -1,0 +1,105 @@
+:root {
+    /* CRAFT-COLORS */
+    --emerald-1: #03d07d;
+    --emerald-2: #02574a;
+    --emerald-3: #027655;
+    --emerald-4: #029c5e;
+    --emerald-5: #03dd85;
+    --emerald-6: #35e49d;
+    --emerald-7: #68ebb6;
+    --emerald-8: #86efc5;
+    --emerald-9: #a4f3d3;
+    --emerald-10: #c3f7e2;
+    --mango-tango-1: #fe863b;
+    --mango-tango-2: #ab4402;
+    --mango-tango-3: #e45a03;
+    --mango-tango-4: #fe6f15;
+    --mango-tango-5: #fe8f4b;
+    --mango-tango-6: #fea269;
+    --mango-tango-7: #feb98e;
+    --mango-tango-8: #fec7a5;
+    --mango-tango-9: #ffd0b4;
+    --mango-tango-10: #ffe0cd;
+    --medium-blue-1: #0021c7;
+    --medium-blue-2: #001052;
+    --medium-blue-3: #000083;
+    --medium-blue-4: #0000b3;
+    --medium-blue-5: #1036fe;
+    --medium-blue-6: #405efe;
+    --medium-blue-7: #667efe;
+    --medium-blue-8: #8598fe;
+    --medium-blue-9: #99a9ff;
+    --medium-blue-10: #c2cbff;
+    --minion-yellow-1: #fce152;
+    --minion-yellow-2: #fcb000;
+    --minion-yellow-3: #fcc300;
+    --minion-yellow-4: #fcdb2c;
+    --minion-yellow-5: #fee545;
+    --minion-yellow-6: #fde775;
+    --minion-yellow-7: #fdec90;
+    --minion-yellow-8: #fef1ac;
+    --minion-yellow-9: #fef6cd;
+    --minion-yellow-10: #fffceb;
+    --oxford-blue-tint: #1e2945;
+    --oxford-blue: #0d152b;
+    --platinum-1: #e6e6e6;
+    --platinum-3: #333333;
+    --platinum-4: #4d4d4d;
+    --platinum-5: #808080;
+    --platinum-6: #999999;
+    --platinum-7: #b3b3b3;
+    --platinum-8: #cccccc;
+    --platinum-9-40: #e6e6e6;
+    --platinum-9: #f2f2f2;
+    --purple-pizzazz-1: #f752d5;
+    --purple-pizzazz-2: #7d0759;
+    --purple-pizzazz-3: #a70976;
+    --purple-pizzazz-4: #de0c9d;
+    --purple-pizzazz-5: #f72dcd;
+    --purple-pizzazz-6: #f975dd;
+    --purple-pizzazz-7: #fa97e6;
+    --purple-pizzazz-8: #fba6ed;
+    --purple-pizzazz-9: #fdc4f3;
+    --purple-pizzazz-10: #fee1f9;
+    --red-ryb-10: #fdd8d5;
+    --red-ryb-1: #fc260c;
+    --red-ryb-2: #910000;
+    --red-ryb-3: #d52000;
+    --red-ryb-4: #fc4832;
+    --red-ryb-5: #f75e52;
+    --red-ryb-6: #f97e75;
+    --red-ryb-7: #fa9e97;
+    --red-ryb-8: #fbb1ac;
+    --red-ryb-9: #fcc5c1;
+    --white: #ffffff;
+
+
+    /* TAILWIND-COLOR-VARIABLES */
+    
+    --destinationIcon: var(--purple-pizzazz-1);
+    --stateButtonActive: var(--medium-blue-1);
+    --stageControlBackground: var(--medium-blue-6);
+    --stateButtonActiveHover: var(--medium-blue-1);
+    --stateButtonInActive: var(--white);
+    --stateButtonDisabled: var(--white);
+    --stateButtonDisabledText: var(--platinum-8);
+    --mainHeader: var(--oxford-blue);
+    --mainText: var(--white);
+    --inputBackGround: var(--platinum-9);
+    --autoCompleteFocusBorder: var(--mango-tango-1);
+    --autoCompleteHoverBg: var(--platinum-9);
+    --buttonGreen: var(--emerald-1);
+    --compToggleBackground: var(--);
+    --compToggleBackgroundActive: var(--);
+    --compToggleButton: var(--);
+
+    /* TAILWIND-SPACING */
+    --tt-inset-populate-top: 105px;
+    --tt-height-populate-header: 60px;
+    --tt-state-control-state-width: 100px;
+
+    
+    /* OverrideTest */
+    /* --stateButtonActive: #b8c2cc;
+        --stateButtonActiveHover: #800000;  */
+}
