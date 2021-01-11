@@ -7,6 +7,15 @@
       :options="mapOptions"
       :center="optData.mapCenter"
     >
+      <GmapHtmlMarker :lat="30.2316673" :lng="-97.6168439">
+        <template #default>
+          <div
+            class="h-px30 w-px30 rounded-full border-mainHeader border-2 bg-teslaRed flex items-center justify-center text-white tt-text-hotel-names"
+          >
+            GF
+          </div>
+        </template>
+      </GmapHtmlMarker>
       <GmapMarker ref="myMarker" :position="{ lat: 10, lng: 10 }" />
     </gmap-map>
 
