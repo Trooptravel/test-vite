@@ -7,9 +7,10 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue';
 import MapElementMixin from '../mixins/map-element.js';
 
-export default {
+export default defineComponent({
   name: 'HTMLMarker',
   mixins: [MapElementMixin],
   props: {
@@ -49,14 +50,18 @@ export default {
   watch: {
     hovering() {
       this.$overlay.repaint();
-    },    
+    },
     marker(val) {
       this.$mapPromise.then((map) => this.$overlay.setPosition());
     },
   },
   provide() {
+    console.log('Provide');
     const self = this;
+    console.log('self');
+    console.log(this);
     this.$mapPromise.then((map) => {
+      console.log('mapPromise');
       class Overlay extends google.maps.OverlayView {
         constructor(map) {
           super();
@@ -66,6 +71,7 @@ export default {
           this.div = null;
         }
         repaint() {
+          console.log('repaint');
           this.div = self.$refs.custom_marker;
           const projection = this.getProjection();
           if (projection && this.div) {
@@ -81,6 +87,8 @@ export default {
           }
         }
         onAdd() {
+          console.log('onAdd');
+
           this.div = self.$refs.custom_marker;
           const panes = this.getPanes();
           let pos = {
@@ -105,22 +113,28 @@ export default {
       this.$overlay = new Overlay(map);
       this.opacity = 1;
     });
+    console.log('Done');
   },
   methods: {},
   computed: {
     latitude() {
+      console.log('latitude');
+
       return parseFloat(this.marker.lat || this.marker.latitude);
     },
     longitude() {
+      console.log('longitude');
       return parseFloat(this.marker.lng || this.marker.longitude);
     },
     z_index() {
+      console.log('z_index');
       let group_index = this.group_active ? 100 : 1;
       let item_index = this.active ? 200 : 2;
       let hover_index = this.hovering ? 300 : 3;
       return group_index + item_index + hover_index;
     },
     position() {
+      console.log('position');
       const self = this;
       return {
         lat() {
@@ -133,18 +147,20 @@ export default {
     },
   },
   beforeUnmount() {
+    console.log('beforeUnmount');
     if (this.$overlay) {
       this.$overlay.setMap(null);
       this.$overlay = undefined;
     }
   },
   unmounted() {
+    console.log('unmounted');
     if (this.$overlay) {
       this.$overlay.setMap(null);
       this.$overlay = undefined;
     }
   },
-};
+});
 </script>
 
 <style>
